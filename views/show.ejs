@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webathon</title>
+    <link rel="stylesheet" href="/style.css">
+   
+</head>
+<body>
+  <div class="container">
+  <div class="element1">
+    <div class="counter" id="counter"> 48-100</div>
+   <div>YOUR</div>
+   <div>WEBPAGE IS LOADING</div>
+ 
+   <p>Please Wait.... </p>
+  </div>
+  </div>
+
+  <script>
+    let start = 48;
+    let end = 100;
+    let counter = document.getElementById('counter');
+    let interval = setInterval(()=>{
+      if(start<end){
+        start++;
+        counter.innerText= `${ start} - 100`;
+      }
+      else{
+        clearInterval(interval);
+        setTimeout(()=>{
+
+          let bottomDiv= document.createElement("div");
+          bottomDiv.className="bottom";
+          bottomDiv.innerHTML=`<form method="GET" action="/element2">
+       <button class="btn btn-primary">Next</button>
+       </form>`;
+       document.querySelector('.container').appendChild(bottomDiv);
+        },1000);}
+
+    },60);
+  </script>
+    
+
+  
+        
+        
+        
+    
+    
+
+
+
+
+
+
+
+
+
+   
+ 
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+    crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+     crossorigin="anonymous">
+    </script>
+</body>
+</html>
