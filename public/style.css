@@ -26,10 +26,11 @@ body {
 
 }
 
-.bottom {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+.button{
+    position: fixed !important;
+    bottom: 150px !important;
+    right: 710px !important;
+  
 }
 
 
@@ -48,13 +49,14 @@ body {
     gap: 2px !important;
     justify-content: center;
     object-fit: cover;
-
-
 }
 
 .card:hover {
     box-shadow: 0 0 40px white !important;
     transition: transform 0.5s ease, box-shadow 0.5s ease;
+    
+    
+
 }
 
 
@@ -67,11 +69,25 @@ body {
     text-align: center;
     color: white;
 }
+.bottom{
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+  
+}
 
 /* element3 */
 .ourteam {
     color: white;
 }
+
+.bottom-left{
+    position: fixed!important;
+    
+    bottom: 20px !important;
+    left: 20px !important;
+}
+
 
 #team1,
 #team2 {

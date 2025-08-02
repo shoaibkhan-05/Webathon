@@ -13,10 +13,11 @@
     <div class="counter" id="counter"> 48-100</div>
    <div>YOUR</div>
    <div>WEBPAGE IS LOADING</div>
- 
    <p>Please Wait.... </p>
   </div>
   </div>
+
+  
 
   <script>
     let start = 48;
@@ -27,15 +28,16 @@
         start++;
         counter.innerText= `${ start} - 100`;
       }
+
       else{
         clearInterval(interval);
         setTimeout(()=>{
 
           let bottomDiv= document.createElement("div");
-          bottomDiv.className="bottom";
+          bottomDiv.className="button";
           bottomDiv.innerHTML=`<form method="GET" action="/element2">
-       <button class="btn btn-primary">Next</button>
-       </form>`;
+        <button class="btn btn-primary"> Now Click me!</button>
+        </form>`;
        document.querySelector('.container').appendChild(bottomDiv);
         },1000);}
 
